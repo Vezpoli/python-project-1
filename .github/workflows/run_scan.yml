@@ -1,0 +1,17 @@
+name: Run Port Scanner
+
+on: [push]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: pip install python-nmap
+
+      - name: Run port scanner
+        run: python port_scanner.py
