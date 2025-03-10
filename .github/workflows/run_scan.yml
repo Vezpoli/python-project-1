@@ -10,8 +10,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Install Nmap
+        run: sudo apt-get update && sudo apt-get install -y nmap  # Install Nmap
+
       - name: Install dependencies
-        run: pip install python-nmap
+        run: pip install python-nmap  # Install python-nmap wrapper
 
       - name: Run port scanner
-        run: python port_scanner.py
+        run: python port_scanner.py  # Execute the Python script
