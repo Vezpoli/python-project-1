@@ -1,7 +1,7 @@
 import nmap
 
 scanner = nmap.PortScanner()
-target_ip = "192.168.1.1"  # Change this to your IP
+target_ip = " 107.175.102.154"  # Change this to your IP
 
 print(f"🔍 Scanning target: {target_ip}...")
 
