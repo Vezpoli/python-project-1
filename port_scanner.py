@@ -4,7 +4,7 @@ import nmap
 scanner = nmap.PortScanner()
 
 # Scan a target for open ports (adjust IP)
-scanner.scan('192.168.1.1', '22-80')  # Scans ports 22 to 80
+scanner.scan('192.168.0.100', '22-80')  # Scans ports 22 to 80
 
 # Process results
 for host in scanner.all_hosts():
